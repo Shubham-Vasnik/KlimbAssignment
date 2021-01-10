@@ -12,4 +12,4 @@ const xlToJson = (filePath, sheetName) => {
 
 }
 
-console.log(xlToJson('../test.xlsx', 'Sheet1')[0]);
+module.exports = xlToJson;
