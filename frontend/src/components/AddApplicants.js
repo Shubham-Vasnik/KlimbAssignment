@@ -30,7 +30,7 @@ const AddApplicants = () => {
         )
         .catch(err => {
             if(err.response.data.error){
-                console.log(err.response.data.message);
+                console.log(err.response.data.error.message);
                 setMessage({error:err.response.data.error.message});
             }
         }

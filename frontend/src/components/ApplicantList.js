@@ -23,7 +23,7 @@ const ApplicantList = () => {
         <div>
             <h1 className="mt-3 ms-4 mb-3">Candidates : {applicants.length}</h1>
             <div className="applicants-table">
-                <table class="m-1 table table-dark table-striped table-hover">
+                <table className="m-1 table table-dark table-striped table-hover">
                     <thead>
                         <tr>
                         <th scope="col">Sr. No.</th>
@@ -41,7 +41,7 @@ const ApplicantList = () => {
                     </thead>
                     <tbody>
                         {applicants.map( (applicant, indx) => {
-                            return <ApplicantRow applicant={applicant} indx={indx}/>
+                            return <ApplicantRow applicant={applicant} key={indx} indx={indx}/>
                         })}
                     </tbody>
                 </table>
